@@ -60,7 +60,7 @@ echo -e "$GREEN Done...$COL_RESET"
 # MariaDB
 echo -e " Installing MariaDB Repository...$COL_RESET"
 hide_output sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
-if [[ ("$DISTRO" == "16") ]]; then
+if [[ ("$DISTRO" == "18") ]]; then
   sudo add-apt-repository 'deb [arch=amd64,arm64,i386,ppc64el] http://mirror.one.com/mariadb/repo/10.4/ubuntu xenial main' >/dev/null 2>&1
 else
   sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://mirror.one.com/mariadb/repo/10.4/ubuntu bionic main' >/dev/null 2>&1
@@ -138,7 +138,7 @@ fi
 
 hide_output sudo apt-get update
 
-if [[ ("$DISTRO" == "16") ]]; then
+if [[ ("$DISTRO" == "18") ]]; then
 apt_install php7.3-fpm php7.3-opcache php7.3-fpm php7.3 php7.3-common php7.3-gd \
 php7.3-mysql php7.3-imap php7.3-cli php7.3-cgi \
 php-pear php-auth-sasl mcrypt imagemagick libruby \
