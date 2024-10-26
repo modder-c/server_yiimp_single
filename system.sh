@@ -193,7 +193,7 @@ sleep 2s
 
 echo -e " Downloading Full Stratum...$COL_RESET"
 cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
-hide_output sudo git clone https://github.com/DirtyHarryDev/stratum-full.git
+hide_output sudo git clone https://github.com/msy2008/stratum-full.git
 sleep 2s
 
 echo -e " Downloading Zentoshi Stratum...$COL_RESET"
