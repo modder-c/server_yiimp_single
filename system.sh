@@ -62,8 +62,7 @@ echo -e " Installing MariaDB Repository...$COL_RESET"
 hide_output sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
 if [[ ("$DISTRO" == "18") ]]; then
   sudo add-apt-repository  -y 'deb [arch=amd64,arm64,ppc64el] https://mirror.mariadb.org/repo/10.6/ubuntu bionic main' >/dev/null 2>&1
-else
-   sudo add-apt-repository -y 'deb [arch=amd64,arm64,ppc64el,s390x] https://mirror.mariadb.org/repo/10.6/ubuntu focal main' >/dev/null 2>&1
+
 fi
 echo -e "$GREEN Done...$COL_RESET"
 
